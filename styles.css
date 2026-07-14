@@ -376,3 +376,15 @@ p { color: var(--text-muted); }
   .hero { padding-top: 48px; }
   .section { padding: 64px 20px; }
 }
+
+.project-grid { grid-template-columns: repeat(3, 1fr); }
+.project-link {
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+@media (max-width: 900px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
